@@ -1,0 +1,81 @@
+.register-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.register-container .form-box{
+    width: 100%;
+    max-width: 500px;
+    background: #FFF;
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid #DF4723;
+}
+
+.register-container .form-box h1{
+    margin-bottom: 20px;
+}
+
+.register-container .form-box input{
+    height: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.register-container .textarea{
+    width: 400px;
+}
+
+
+.register-container .form-box button{
+    margin-top:25px;
+    width: 98%;
+    border: 0;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 16px;
+    background: #DF4723;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.register-container .form-box button:hover{
+    color:rgb(0, 0, 0);
+    background-color: #FFF;
+    border: 2px solid #DF4723;
+    border-radius: 4px;
+}
+
+.register-container .form-box .btn-gray{
+    background-color: #666;
+}
+
+.register-container .form-box .btn-side-to-side{
+    width: 45%;
+    float: left;
+}
+
+
+.register-container span{
+    color:#DF4723;
+ } 
+
+.register-container a{
+   text-decoration: none;
+   color:rgb(0, 0, 0);
+   cursor:pointer;
+   font-weight: bold;
+}
+
+.img-avatar{
+    margin-top: 30px;
+    max-width: 200px;
+    max-height: 200px;
+}

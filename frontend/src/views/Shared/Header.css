@@ -1,0 +1,25 @@
+.menu-direita{
+    float: right; 
+    margin-left: auto;
+    letter-spacing: 2px;
+    padding: 0px 10px;
+}
+
+.menu-fixo{
+    padding: 0% 10%;
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+.lista-rotas{
+    display: flex;
+    flex-direction:row;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.linkMenu{
+    color: gray;
+}

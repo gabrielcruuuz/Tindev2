@@ -1,0 +1,138 @@
+.login-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-container img{
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+.login-terceiros{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.login-terceiros .loginBtn {
+    position: relative;
+    margin: 0.2em;
+    padding: 5px 15px 5px 46px;
+    text-align: left;
+    line-height: 34px;
+    white-space: nowrap;
+    border-radius: 0.3em;
+    font-size: 18px;
+    color: #FFF;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.login-terceiros .loginBtn:before {
+    content: "";
+    position: absolute;
+    top: 5;
+    left: 0;
+    width: 34px;
+    height: 89%;
+ }
+
+.login-terceiros .loginBtn-facebook {
+    background-image: linear-gradient(#4C69BA, #3B55A0);
+}
+
+.login-terceiros .loginBtn-facebook:before {
+    border-right: #364e92 1px solid;
+    background: url('../../assets/images/icon_facebook.png') 6px 6px no-repeat;
+}
+
+.login-terceiros .loginBtn-facebook:hover {
+    background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+.login-terceiros .loginBtn-github{
+    background: linear-gradient(#252525 , #292929);
+}
+
+.login-terceiros .loginBtn-github:hover{
+    background: linear-gradient(#3b3b3b, #525151);
+}
+
+.login-terceiros .loginBtn-github:before{
+    /* background: url('../../assets/images/icon_facebook.png') 6px 6px no-repeat; */
+}
+
+.divider{
+    border-top: 1px solid #bcbec2;
+    display: block;
+    line-height: 1px;
+    margin: 13px 0;
+    position: relative;
+    text-align: center;
+    width: 300px;
+}
+
+.divider strong{
+   font-size: 12px;
+   letter-spacing: 1px;
+   padding: 0 20px;
+   text-transform: uppercase;
+   background:#f5f5f5;
+}
+
+.login-container form{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container form input{
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.login-container form input::placeholder{
+    color: #999;
+}
+
+.login-container form button{
+    margin-top:25px;
+    width: 98%;
+    border: 0;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 16px;
+    background: #DF4723;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.login-container form button:hover{
+    color:rgb(0, 0, 0);
+    background-color: #FFF;
+    border: 2px solid #DF4723;
+    border-radius: 4px;
+}
+
+.login-container span {
+   margin-top: 20px;
+   color: #DF4723;
+}
+
+.login-container a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+ }
