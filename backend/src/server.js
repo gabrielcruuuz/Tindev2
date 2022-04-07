@@ -8,6 +8,7 @@ const app = express();
 app.use(cors());
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
+require('dotenv').config();
 
 const usuariosConectados = {};
 
@@ -16,6 +17,7 @@ io.on('connection', socket => {
     const {idUsuarioLogado} = DecrypToken(token);
    usuariosConectados[idUsuarioLogado] = socket.id;
 });
+
 
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true
