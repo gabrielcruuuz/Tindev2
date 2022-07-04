@@ -20,8 +20,10 @@ io.on('connection', socket => {
 
 
 mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    dbName: "tindevBD"
 });
+
 
 app.use((req, res, next) => {
     req.io = io;
