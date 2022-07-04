@@ -55,7 +55,7 @@ export default function Login(props){
             <div className="login-terceiros">
             <FacebookLogin
                 callback = {handlerLoginFacebook} 
-                appId="2890505337662648"
+                appId="353555623523142"
                 fields="name, email, picture"
                 cssClass="loginBtn loginBtn-facebook"
                 textButton= "Logar com Facebook">
