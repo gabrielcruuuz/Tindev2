@@ -27,7 +27,7 @@ export class FormUserPerfil extends Component{
             <React.Fragment>
                 <div className="register-container">
                     <div className="form-box">
-                        <h1>Perfil</h1>
+                        <h1>Profile</h1>
                         <form className={classes.root} onSubmit={handleSubmit}>
                         <TextField
                                 onChange={handleInputChange}
@@ -42,7 +42,7 @@ export class FormUserPerfil extends Component{
                             />
                             <br/>
                             <div className="upload-img">
-                                <h4>Foto</h4>
+                                <h4>Picture</h4>
                                 <input
                                     accept="image/*"
                                     id="avatar"
@@ -58,15 +58,15 @@ export class FormUserPerfil extends Component{
                             <button 
                                 type="button" 
                                 onClick={this.back}
-                                className="btn-side-to-side btn-gray">Voltar
+                                className="btn-side-to-side btn-gray">Back
                             </button>
                             <button 
                                 type="submit" 
-                                className="btn-side-to-side">Cadastrar
+                                className="btn-side-to-side">Submit
                             </button>
                         </form>
-                        <span>Já tem uma conta?
-                            <Link to="/"> Logar</Link>
+                        <span>Already have a account?
+                            <Link to="/"> Login</Link>
                         </span>
                     </div>
                 </div>

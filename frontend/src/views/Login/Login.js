@@ -58,25 +58,25 @@ export default function Login(props){
                 appId="353555623523142"
                 fields="name, email, picture"
                 cssClass="loginBtn loginBtn-facebook"
-                textButton= "Logar com Facebook">
+                textButton= "Login with Facebook">
             </FacebookLogin>
             </div>
 
             <div className="divider">
-                <strong>ou</strong>
+                <strong>or</strong>
             </div>
 
             <form onSubmit = {handlerSubmit}>
                 <TextField
                     required  
-                    placeholder="Digite seu email"
+                    placeholder="email"
                     type="email"
                     name="email"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
                 <TextField
-                    placeholder="senha"
+                    placeholder="password"
                     type="password"
                     name="senha"
                     required
@@ -84,11 +84,11 @@ export default function Login(props){
                     onChange={e => setSenha(e.target.value)}
                 />
                 <span>{errorLogin}</span>
-                <button type="submit">Entrar</button>
+                <button type="submit">Login</button>
             </form>
 
-            <span>Ainda não tem conta?
-                <Link to="/register"> Cadastre-se</Link>
+            <span>Still don't have a acoount?
+                <Link to="/register"> Register</Link>
             </span>
         </div>
     );

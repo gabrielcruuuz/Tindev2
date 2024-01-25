@@ -30,7 +30,7 @@ export class FormUserDetails extends Component{
         Object.keys(inputs).forEach(val => {
             if(inputs[val] ==='')
             {
-                mensagem = 'campo obrigatorio';
+                mensagem = 'required field';
                 changeFormError(val, mensagem);
             }          
             else{
@@ -47,7 +47,7 @@ export class FormUserDetails extends Component{
         return (
             <div className="register-container">
                 <div className="form-box">
-                    <h1>Criar conta</h1>
+                    <h1>New account</h1>
                     <form className={classes.root}>
                     <TextField
                             required
@@ -55,7 +55,7 @@ export class FormUserDetails extends Component{
                             onChange={handleInputChange}
                             name="nome"
                             id="nome"
-                            label="Nome completo"
+                            label="Full name"
                             margin="normal"
                             error ={values.formErrors.nome.length === 0 ? false : true }
                             helperText={values.formErrors.nome}
@@ -82,7 +82,7 @@ export class FormUserDetails extends Component{
                             required
                             fullWidth
                             id="senha"
-                            label="Senha"
+                            label="Password"
                             className=""
                             margin="normal"
                             type="password"
@@ -92,11 +92,11 @@ export class FormUserDetails extends Component{
                         />
                         <button 
                             type="button" 
-                            onClick={this.continue}>Continue
+                            onClick={this.continue}>Next
                         </button>
                     </form>
-                    <span>Já tem uma conta?
-                        <Link to="/"> Logar</Link>
+                    <span>Already have a account?
+                        <Link to="/"> Login</Link>
                     </span>
                 </div>
             </div>

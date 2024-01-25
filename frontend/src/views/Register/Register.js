@@ -48,14 +48,14 @@ export class Register extends Component{
        switch(nameInput){
            case "email":
                 if(!valueInput.includes("@"))
-                    formErrors.email = "email invalido";
+                    formErrors.email = "invalid email";
                 else
                     formErrors.email = "";
            break;
 
            case "senha":
                 if(valueInput.length < 5 )
-                    formErrors.senha = "senha muito curta";
+                    formErrors.senha = "password too short";
                 else
                     formErrors.senha = "";
            break;
@@ -131,7 +131,7 @@ export class Register extends Component{
             }        
         }
         else
-            alert('formulário invalido');
+            alert('form invalid');
     }
 
     formValid = () => {
